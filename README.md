@@ -109,8 +109,8 @@ A complete configuration table is below:
 local config = {
   -- The callback that is invoked to compute a diff so that we know what to
   -- format. This defaults to vim.diff with some sensible defaults.
-  diff_callback = function(compareee_content, buf_content)
-    return vim.diff(compareee_content, buf_content, {...})
+  diff_callback = function(comparee_content, buf_content)
+    return vim.text.diff(comparee_content, buf_content, { result_type = "indices" })
   end,
 
   -- The callback that is invoked to actually do the formatting on the changed
