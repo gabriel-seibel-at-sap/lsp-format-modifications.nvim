@@ -166,12 +166,13 @@ an example) — pull requests are very welcome.
 
 ## Tested language servers
 
-| Language server      | Works with `lsp-format-modifications.nvim`? | More info                                                                                                                                                                                       |
-| -------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `clangd`             | ✅                                          |                                                                                                                                                                                                 |
-| `tsserver`           | ✅                                          |                                                                                                                                                                                                 |
-| `null_ls`            | ✅                                          | See [this issue](https://github.com/joechrisellis/lsp-format-modifications.nvim/issues/1#issuecomment-1275302811) for how to get set up — only sources that support range formatting will work. |
-| `lua-language-server`| ✅                                          | For best results, set the `experimental_empty_line_handling` option in config.                                                                                                                  |
+| Language server       | Works with `lsp-format-modifications.nvim`? | More info                                                                                                                                                                                       |
+| --------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `clangd`              | ✅                                          |                                                                                                                                                                                                 |
+| `tsserver`            | ✅                                          |                                                                                                                                                                                                 |
+| `null_ls`             | ✅                                          | See [this issue](https://github.com/joechrisellis/lsp-format-modifications.nvim/issues/1#issuecomment-1275302811) for how to get set up — only sources that support range formatting will work. |
+| `lua-language-server` | ✅                                          | For best results, set the `experimental_empty_line_handling` option in config.                                                                                                                  |
+| `jdtls`               | ✅                                          | The client does not reliably find the `documentRangeFormattingProvider` element in server_capabilities, but it's tested to work to regardless                                                   |
 
 [git-vcs]: https://git-scm.com
 [mercurial-vcs]: https://www.mercurial-scm.org
